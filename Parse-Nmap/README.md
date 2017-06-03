@@ -70,14 +70,16 @@ dir *.xml | parse-nmap.ps1
 To extract the IP addresses and hostnames of the machines fingerprinted as running Windows XP:
 
 ```powershell
-.\parse-nmap.ps1 samplescan.xml | where {$_.OS -like "*Windows XP*"} |
+.\parse-nmap.ps1 samplescan.xml | 
+where {$_.OS -like "*Windows XP*"} |
 format-table IPv4,HostName,OS
 ```
 
 To find the hosts listening on TCP/23 for telnet:
 
 ```powershell
-.\parse-nmap.ps1 samplescan.xml | where {$_.Ports -like "*open:tcp:23*"}
+.\parse-nmap.ps1 samplescan.xml | 
+where {$_.Ports -like "*open:tcp:23*"}
 ```
 
 The "-like" operator is for simple wildcard matching, while the "-match" operator is for regular expression matching. You have the full .NET Framework regular expression engine available to you. Also, note that the Ports property is a space-character-delimited list of scanned ports in the format of state:protocol:portnumber:servicename (see the nmap documentation) for each port in the list.
@@ -112,7 +114,8 @@ To export the processed data to an HTML file for viewing in a browser:
 ```powershell
 .\parse-nmap.ps1 samplescan.xml -outputdelimiter " " |
 select-object IPv4,HostName,OS |
-ConvertTo-Html | out-file \serversharereport.html
+convertto-html | 
+out-file \serversharereport.html
 ```
 
 ## View RunStats Information (-RunStatsOnly)
