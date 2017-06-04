@@ -19,17 +19,17 @@ You can obtain lists of IP addresses and network ID ranges to block from a varie
 
 Here are a few sources to try:
 
-http://www.ipdeny.com/ipblocks/
+* http://www.ipdeny.com/ipblocks/
 
-http://www.okean.com/thegoods.html
+* http://www.okean.com/thegoods.html
 
-http://www.countryipblocks.net/
+* http://www.countryipblocks.net/
 
-http://www.wizcrafts.net/iptables-blocklists.html
+* http://www.wizcrafts.net/iptables-blocklists.html
 
-http://www.iblocklist.com
+* http://www.iblocklist.com
 
-http://lite.ip2location.com
+* http://lite.ip2location.com
 
 Note: If you also want to block the resolution of unwanted hostnames in DNS, there is another script for that here.
 
