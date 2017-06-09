@@ -10,7 +10,7 @@ See Snapshot-Wrapper.ps1 for a starter script to be run on at-risk machines as a
 Run the Snapshot.ps1 script and wait a few minutes:
 
 ```powershell
-.\Snapshot.ps1
+.\Snapshot.ps1 -verbose
 ```
 
 After a few minutes, depending on the speed of your computer, a new subdirectory will be created and filled with a variety of XML, TXT and CSV files.  The folder is named after your computername and the current time, e.g., COMPUTER-2018-11-3-1-22.  
