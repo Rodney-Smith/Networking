@@ -23,8 +23,6 @@ users' computers, you can find possible independent Internet connections.
 #> #############################################################################
 
 
-
-
 # Test-RoutePrint returns true if your $GatewayRegex regular expression pattern
 # matches the output of running 'route print 0.0.0.0' on a host.  The pattern
 # should match on something which indicates a valid default gateway of yours;
@@ -36,9 +34,6 @@ function Test-RoutePrint ( $GatewayRegex = "regular expression to be tested" )
 }
 
 
-
-
-
 # Test-PingEscape returns true if the $PingTestTarget can be pinged.
 # Requires PowerShell 2.0 or later.  Assumes that ping would not
 # normally work, perhaps because you block ICMP at the perimeter.
@@ -47,8 +42,6 @@ function Test-PingEscape ( $PingTestTarget = "8.8.8.8" )
 {
     test-connection -computername $PingTestTarget -count 1 -quiet
 }
-
-
 
 
 # Test-PingEscapeRemotely will obtain a list of all computer names in the domain,
@@ -88,20 +81,6 @@ function Test-PingEscapeRemotely ( $PingTestTarget = "8.8.8.8", $ComputerNameFil
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Detect device drivers for common mobile wireless devices,
 # such as from AT&T, Sprint, Verizon, etc., so that the
 # wireless connection does not have to be live at the
@@ -111,5 +90,3 @@ function Test-MobileWirelessDriver
 {
     # Need to get a list of driver strings from volunteers...  :-)
 }
-
-
