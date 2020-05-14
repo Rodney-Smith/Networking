@@ -33,7 +33,7 @@
   Switch to display error return data for each adapter.
 
 .NOTES
-  Legal: Public domain, script provided "AS IS" without any warranties.
+  Legal: 0BSD.
   Author: Enclave Consulting LLC, Jason Fossen, http://sans.org/sec505
   Version: 1.0
 #>
